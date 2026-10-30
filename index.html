@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mary Brock Jones, the Arcadia books</title>
+<meta name="description" content="A homepage idea made by Sparsh Saini for Mary Brock Jones. Not her official site.">
+<meta property="og:title" content="Mary Brock Jones: Fix your planet or we'll do it for you">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Mary Brock Jones. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/marybrockjones/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/plate.jpg">
+<style>
+:root{--sky:#e38a2c;--rust:#8a2f14;--night:#1a0d08;--dust:#2a1610;--silver:#e9e6e2;--soft:#d8bfa8;--gold:#f6c46a}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--night)}
+body{color:var(--silver);font:300 17px/1.65 "Jost",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.strip{position:relative;z-index:5;background:#120805;color:var(--soft);font-size:13px;line-height:1.35;padding:8px 16px;text-align:center;border-bottom:1px solid rgba(233,230,226,.2)}
+.caps{font-family:"Josefin Sans";font-weight:300;text-transform:uppercase;letter-spacing:.32em}
+.hero{position:relative;height:380vh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:linear-gradient(#e7962f,#b4501c 45%,#5a200e 75%,#2a1009)}
+.frame{position:absolute;left:50%;top:50%;width:min(100vw,calc(100svh * 1070 / 1500));aspect-ratio:1070/1500;translate:-50% -50%;will-change:transform;transform-origin:49.3% 63.2%}
+.frame>img{position:absolute;left:0;width:100%;height:auto;display:block}
+.plate{top:0;height:100%}
+.ring{top:56%;height:44%;opacity:0;will-change:opacity}
+.title{top:10.67%;left:9.35%!important;width:81.8%!important;will-change:transform,opacity}
+.name{position:absolute;left:0;right:0;top:14px;text-align:center;font-size:12px;z-index:3;color:var(--silver)}
+.line{position:absolute;left:16px;right:16px;bottom:max(20px,4svh);text-align:center;opacity:0;will-change:opacity,transform}
+.line p{font-family:"Josefin Sans";font-weight:300;font-size:clamp(20px,2.4vw,30px);line-height:1.25;text-shadow:0 2px 14px rgba(26,13,8,.9)}
+.btn{display:inline-block;margin-top:14px;padding:11px 22px 9px;border:1px solid var(--silver);text-decoration:none;font-family:"Josefin Sans";font-weight:400;font-size:13px;text-transform:uppercase;letter-spacing:.28em;background:rgba(26,13,8,.55)}
+.btn.solid{background:var(--silver);color:var(--night)}
+@media (min-width:900px){.line{left:auto;right:5vw;width:min(28vw,380px);bottom:auto;top:50%;translate:0 -50%;text-align:left}.frame{left:42%}}
+section{padding:96px 16px;max-width:1100px;margin:0 auto}
+h2{font-family:"Josefin Sans";font-weight:100;font-size:clamp(44px,8vw,96px);line-height:1;text-transform:uppercase;letter-spacing:.08em;background:none}
+h3{font-family:"Josefin Sans";font-weight:300;font-size:26px;text-transform:uppercase;letter-spacing:.18em;margin-top:6px}
+.lede{font-family:"Josefin Sans";font-weight:300;font-size:clamp(22px,3vw,30px);line-height:1.3;max-width:760px;margin:22px 0 0;color:var(--silver)}
+.trilogy{display:grid;gap:56px;margin-top:56px}
+.vol{display:grid;gap:22px;align-items:start}
+.vol img{width:100%;max-width:300px;box-shadow:0 22px 50px rgba(0,0,0,.55)}
+.vol .n{font-size:12px;color:var(--gold)}
+.vol p{color:var(--soft);margin:12px 0}
+.vol .q{font-family:"Josefin Sans";font-size:21px;line-height:1.3;color:var(--silver)}
+.award{font-size:14px;color:var(--gold);margin-top:6px}
+.families{background:linear-gradient(90deg,#3b1a0d 0 50%,#10261b 50% 100%);max-width:none}
+.families .in{max-width:1100px;margin:0 auto;display:grid;gap:40px}
+.families h3{font-size:20px}
+.families p{color:#e6d6c6;margin-top:10px}
+.other dl{margin-top:30px;display:grid;gap:26px}
+.other dt{font-size:13px;color:var(--gold)}
+.other dd{margin:6px 0 0;font-size:19px}
+.about{display:grid;gap:36px;align-items:center}
+.about img{width:220px;border-radius:50%;aspect-ratio:1;object-fit:cover;object-position:50% 20%;border:1px solid rgba(233,230,226,.4)}
+.about p{color:var(--soft);margin-top:14px}
+.fair{border-top:1px solid rgba(233,230,226,.25);border-bottom:1px solid rgba(233,230,226,.25)}
+.fair ul{list-style:none;padding:0;margin-top:26px;display:grid;gap:18px}
+.fair b{display:block;font-family:"Josefin Sans";font-weight:400;text-transform:uppercase;letter-spacing:.2em;font-size:14px;color:var(--silver)}
+.fair li{color:var(--soft)}
+.close{text-align:center}
+.close p{color:var(--soft);max-width:560px;margin:18px auto 0}
+footer{padding:28px 16px 40px;text-align:center;font-size:13px;color:var(--soft)}
+@media (min-width:760px){.vol{grid-template-columns:300px 1fr;gap:48px}.vol:nth-child(2){grid-template-columns:1fr 300px}.vol:nth-child(2) img{order:2}.families .in{grid-template-columns:1fr 1fr;gap:80px}.about{grid-template-columns:220px 1fr}.other dl{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){.hero{height:auto}.stage{position:relative;height:100svh}.ring,.line{opacity:1!important}}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Mary Brock Jones. Not her official site.</div>
+
+<header class="hero">
+  <div class="stage">
+    <div class="name caps">Mary Brock Jones</div>
+    <div class="frame" id="frame">
+      <img class="plate" src="img/plate.jpg" alt="" width="1070" height="1500">
+      <img class="ring" src="img/ring0.webp" alt="" width="1070" height="660">
+      <img class="ring" src="img/ring1.webp" alt="" width="1070" height="660">
+      <img class="ring" src="img/ring2.webp" alt="" width="1070" height="660">
+      <img class="ring" src="img/ring3.webp" alt="" width="1070" height="660">
+      <img class="ring" src="img/ring4.webp" alt="" width="1070" height="660">
+      <img class="ring" src="img/ring5.webp" alt="" width="1070" height="660">
+      <img class="title" id="title" src="img/title.png" alt="Taken" width="875" height="250">
+    </div>
+    <div class="line" id="line">
+      <h1 class="caps" style="font-size:12px;color:var(--gold)">Arcadia, book two</h1>
+      <p>Fix your planet or we’ll do it for you, warns the Alliance.</p>
+      <a class="btn" href="#arcadia">The Arcadia books</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="arcadia">
+  <h2>Arcadia</h2>
+  <p class="lede">Space opera with a planet in trouble. Drought, storms and floods, a galactic Alliance losing patience, and two people who would rather fight each other than fix it together.</p>
+  <div class="trilogy">
+    <div class="vol">
+      <img src="img/torn.jpg" alt="Torn cover: two figures on a red ridge under a huge planet" width="900" height="1415" loading="lazy">
+      <div>
+        <div class="n caps">Book one</div><h3>Torn</h3>
+        <p class="q">“Storms, floods, drought. Don’t bother taking your pick,” says the planet, “you’re going to get the lot.”</p>
+        <p>Caleb Winter loves his drylands home, and the desert is winning. Fee den Coille is a woman of the forest, sent to the parched plains to work with a man from a family long an enemy of hers.</p>
+        <a class="btn" href="https://www.amazon.com/dp/B01IT5ZKR0">Get Torn</a>
+      </div>
+    </div>
+    <div class="vol">
+      <img src="img/taken.jpg" alt="Taken cover: two people walk toward a solar tower in a desert of mirrors" width="900" height="1262" loading="lazy">
+      <div>
+        <div class="n caps">Book two</div><h3>Taken</h3>
+        <p>All Ethan Winter wanted was to run his family’s solar energy business. Union organiser Sarwenna Beren is set for battle the moment he arrives in her desert town. Then a frightened boy runs off into the desert, and his flyer needs her local knowledge.</p>
+        <a class="btn" href="https://www.amazon.com/dp/B08ZM9B8C5">Get Taken</a>
+      </div>
+    </div>
+    <div class="vol">
+      <img src="img/exiled.jpg" alt="Exiled cover: two astronauts beneath a ringed planet and a space station" width="900" height="1262" loading="lazy">
+      <div>
+        <div class="n caps">Book three</div><h3>Exiled</h3>
+        <p class="q">Sentenced to exile by his home world, he’s hungry for revenge.</p>
+        <p>Seolta den Coille is banished from Arcadia. Anyara wants to be left in peace to run her space station’s biota systems, and to stay alive. They run together, across Alliance space, straight into the Alliance Council.</p>
+        <div class="award">Winner, 2024 Prism Award for Science Fiction (RWA Fantasy, Futuristic and Paranormal Chapter)</div>
+        <a class="btn" href="https://www.amazon.com/dp/B0B1V1LJS9">Get Exiled</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="families">
+  <div class="in">
+    <div><div class="caps" style="font-size:12px;color:var(--gold)">The drylands</div><h3>The Winters</h3><p>Sun-baked dirt, ripe grasses, hot wind. Solar fields and the family business that runs the town.</p></div>
+    <div><div class="caps" style="font-size:12px;color:#9fd0a8">The forest</div><h3>The den Coilles</h3><p>Wind and rain, storms on the mountain, the smell of mud and wet leaves. A family long an enemy of the Winters.</p></div>
+  </div>
+</section>
+
+<section class="other">
+  <h2>Before Arcadia</h2>
+  <dl>
+    <div><dt class="caps">Hathe</dt><dd>Toil and Strife (Hathe books one and two) and Aftermath, Hathe book three. Aftermath won a 2018 SFR Galaxy Award for Potent Post-War Setting.</dd></div>
+    <div><dt class="caps">Otago gold rush</dt><dd>Historical romance set in the gold rushes of the South Island, where she spent her childhood: A Heart Divided and Swift Runs the Heart.</dd></div>
+  </dl>
+</section>
+
+<section class="about">
+  <img src="img/mary.jpg" alt="Mary Brock Jones" width="306" height="323" loading="lazy">
+  <div>
+    <h2 style="font-size:clamp(36px,6vw,64px)">Mary Brock Jones</h2>
+    <p>Lives in Auckland. Grew up partly in Otago, which is where the historical romances come from. Mother of four grown sons, office-bound by day, writing science fiction and historical romance the rest of the time. A member of SpecFicNZ and Romance Writers of Australia.</p>
+  </div>
+</section>
+
+<section class="fair">
+  <h2 style="font-size:clamp(36px,6vw,64px)">Find her</h2>
+  <ul>
+    <li><b>Indie Writers Festival</b>Te Manawa, Massey, Auckland, 29 August 2026</li>
+    <li><b>Ages of Pages book fair</b>One of the authors at the Waikato fair</li>
+    <li><b>Online</b><a href="https://www.instagram.com/marybrockjones/">Instagram</a></li>
+  </ul>
+</section>
+
+<section class="close">
+  <h2 style="font-size:clamp(34px,6vw,60px)">Start with Torn</h2>
+  <p>Book one of Arcadia, where the desert is creeping closer every day.</p>
+  <a class="btn solid" href="https://www.amazon.com/dp/B01IT5ZKR0">Get Torn</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Mary Brock Jones. Not affiliated, not live.</footer>
+
+<script>
+(()=>{
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ const hero=document.querySelector('.hero'),f=document.getElementById('frame'),ti=document.getElementById('title'),
+  rings=[...document.querySelectorAll('.ring')],line=document.getElementById('line');
+ const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),e=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+ let top=0,len=1,tick=false;
+ const measure=()=>{top=hero.offsetTop;len=hero.offsetHeight-innerHeight};
+ const draw=()=>{tick=false;
+  const p=cl((scrollY-top)/len);
+  rings.forEach((r,i)=>{r.style.opacity=cl((p-.04-i*.075)/.09)});   // the mirrors catch the sun, tower outward
+  const a=e(cl((p-.22)/.6));
+  f.style.transform=`scale(${2.3-1.3*a})`;
+  ti.style.opacity=cl((p-.55)/.2);
+  ti.style.transform=`translateY(${(1-cl((p-.5)/.3))*-40}%) scale(${1.12-.12*cl((p-.5)/.3)})`;
+  const l=cl((p-.82)/.12); line.style.opacity=l; line.style.transform=`translateY(${(1-l)*16}px)`;
+ };
+ const on=()=>{if(!tick){tick=true;requestAnimationFrame(draw)}};
+ measure();draw();addEventListener('scroll',on,{passive:true});addEventListener('resize',()=>{measure();on()});
+})();
+</script>
+</body>
+</html>
